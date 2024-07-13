@@ -30,6 +30,10 @@
         line-height: 1.2;
         color: var(--bs-heading-color);
       }
+      .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     </style>
   </head>
   <body class="container-xl p-0">
@@ -49,7 +53,7 @@
               <li >
                 
                 <div class="btn-group dropstart">
-                  <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <button type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                     <img  src="images/circle-white.png" height="38px" width="38px" alt="">
                   </button>
                   <div class="dropdown-menu p-4 ">
@@ -75,10 +79,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul id="category-container" class="navbar-nav me-auto my-2 my-lg-0 gap-4" >
-                
-                
-              </ul>
+              <div id="category-container" class="navbar-nav me-auto my-2 my-lg-0 column-gap-4">
+
+              </div>
             </div>
           </div>
         </nav>
