@@ -13,7 +13,8 @@ const displaycategory = categories => {
 
   for(const category of categories){
     // console.log(category);
-    const newCategory = document.createElement('div');
+    const newCategory = document.createElement('li');
+    newCategory.classList.add('nav-item');
     newCategory.innerHTML = `
       <h4 onclick="loadCategoryDetails('${category.category_id}')"> ${category.category_name} </h4>
     `

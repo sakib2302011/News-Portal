@@ -22,6 +22,14 @@
       .dropdown-menu{
         --bs-dropdown-min-width: 13rem;
       }
+      .navbar-brand{
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        color: var(--bs-heading-color);
+      }
     </style>
   </head>
   <body class="container-xl p-0">
@@ -60,11 +68,20 @@
         </div>
       </nav>
       <section class="border-top border-1 border-secondary py-3 px-3">
-        <div id="category-container" class="text-secondary d-flex justify-content-between">
-          <div>
-            <h4>Home</h4>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul id="category-container" class="navbar-nav me-auto my-2 my-lg-0 gap-4" >
+                
+                
+              </ul>
+            </div>
           </div>
-        </div>
+        </nav>
       </section>
     </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
